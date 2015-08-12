@@ -1,0 +1,62 @@
+﻿div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-aling: center;
+}
+.nav{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-family: Impact, Charcoal, sans-serif;
+	background-color: rgb(102, 153, 255);
+	width: 900px;
+	font-size: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.nav li{
+	display: inline-block;
+	padding: 10px;
+	font-size: 18px;
+}
+.nav li a{
+	text-transform: uppercase;
+}
+.nav a{
+	text-decoration: none;
+	color: white;
+}
+.nav li:hover{
+	box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	background-color: #f2f2f2;
+}
+.nav li:hover a{
+	color:#bfbfbf;
+}
+/* скрытие дочернего списка */
+ul.nav li ul.nav-sub{
+	display: none;/* скрываем второй уровень */
+	list-style: none;
+	position: absolute; /* меню 2-го уровня будет находиться относительно 1-го меню */
+	top: 42px; /* опускаем меню второго уровня под главное меню */
+	left: 0; /* подвигаем меню второго уровня под главное меню */
+	z-index: 10; /* дочерний список не будет ниже других элементов на странице */
+	background-color: #f2f2f2;
+}
+ul.nav li ul.nav-sub li a{
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+/* отображение дочернего списка */
+ul.nav li:hover ul.nav-sub{
+	gloat: none;
+	display: block;
+	width: 900px;
+	margin: 0;
+	padding:0;
+}
+	
